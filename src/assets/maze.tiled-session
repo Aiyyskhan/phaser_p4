@@ -1,0 +1,34 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "maze_0.json",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "maze_0.json": {
+            "scale": 0.75,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 480,
+                "y": 337.3333333333333
+            }
+        },
+        "maze_0.json#tiles": {
+            "scaleInDock": 0.75
+        }
+    },
+    "last.imagePath": "D:/Projects/JS_projects/phaser_p1/src/assets",
+    "map.lastUsedFormat": "json",
+    "openFiles": [
+        "maze_0.json"
+    ],
+    "project": "maze.tiled-project",
+    "recentFiles": [
+        "maze_0.json"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.spacing": 1
+}
