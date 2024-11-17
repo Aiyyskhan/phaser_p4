@@ -4,6 +4,8 @@ export class Kitty {
     private character: Phaser.GameObjects.Container;
     private x: number;
     private y: number;
+
+    private s: number = 3;
     
     constructor(scene: Phaser.Scene, x: number, y: number) { //, texture: string) {
         this.scene = scene;
@@ -40,16 +42,16 @@ export class Kitty {
         const keys = this.scene.input.keyboard.createCursorKeys();
 
         if (keys.up.isDown) {
-            this.y -= 2;
+            this.y -= this.s;
             // this.character.setPosition(this.x, this.y);
         } else if (keys.down.isDown) {
-            this.y += 2;
+            this.y += this.s;
             // this.character.setPosition(this.x, this.y);
         } else if (keys.left.isDown) {
-            this.x -= 2;
+            this.x -= this.s;
             // this.character.setPosition(this.x, this.y);
         } else if (keys.right.isDown) {
-            this.x += 2;
+            this.x += this.s;
             // this.character.setPosition(this.x, this.y);
         }
         this.character.setPosition(this.x, this.y);
