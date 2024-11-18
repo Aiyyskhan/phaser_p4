@@ -30,7 +30,8 @@ export class Kitty {
         const basecolor = this.scene.add.sprite(0, 0, "basecolor").play({ key: "Right", repeat: -1 }).setScale(2);
         const contur = this.scene.add.sprite(0, 0, "contur").play({ key: "ConturRight", repeat: -1 }).setScale(2);
 
-        // contur.setTint(0xffffff);
+        basecolor.setTint(0xff0000, 0x00ff00, 0x0000ff, 0xffffff);
+        contur.setTint(0x00ff00);
 
         this.character.add([
             basecolor,
