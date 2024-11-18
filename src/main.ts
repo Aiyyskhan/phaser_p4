@@ -10,7 +10,7 @@ new Phaser.Game({
   height: window.innerHeight, //640,
   title: "NeuroKitties",
   scene: scenes,
-  backgroundColor: "#000",
+  backgroundColor: "#fdfced", //"#000"
   scale: {
     mode: Phaser.Scale.FIT,
     autoCenter: Phaser.Scale.CENTER_BOTH,
