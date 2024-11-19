@@ -5,7 +5,7 @@ export class Kitty {
     private x: number;
     private y: number;
 
-    private speed: number = 3;
+    public speed: number = 3;
     private sprite_scale: number = 3;
 
     private base: Phaser.GameObjects.Sprite;
@@ -13,7 +13,7 @@ export class Kitty {
     private muzzle: Phaser.GameObjects.Sprite;
     private face: Phaser.GameObjects.Sprite;
 
-    private anim_key_suf: string;
+    // private anim_key_suf: string;
     
     constructor(scene: Phaser.Scene, x: number, y: number) { //, texture: string) {
         this.scene = scene;
@@ -85,6 +85,7 @@ export class Kitty {
         this.pattern0.setTint(Math.random() * 16000000); //0x696a6a);
         // this.muzzle.setTint(Math.random() * 16000000);
         this.muzzle.setAlpha(Math.random());
+        // this.face.setTint(0x000000);
 
         this.character.add([
             this.base,
@@ -137,5 +138,6 @@ export class Kitty {
             }
         }
         this.character.setPosition(this.x, this.y);
+        this.character.setDepth(this.y);
     }
 }
