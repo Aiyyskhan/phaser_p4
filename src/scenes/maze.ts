@@ -12,7 +12,7 @@ export class Maze extends Phaser.Scene {
 
     preload() {
         this.load.image(TILES.MAZE, "src/assets/durotar.png");
-        this.load.tilemapTiledJSON("map", "src/assets/maze_0.json");
+        this.load.tilemapTiledJSON("map", "src/assets/maze_1.json");
         
         this.load.spritesheet("base", "src/assets/characters/Kitty20241118_1_base.png", { frameWidth: SIZES.PLAYER.WIDTH, frameHeight: SIZES.PLAYER.HEIGHT });
         this.load.spritesheet("pattern0", "src/assets/characters/Kitty20241118_1_pattern0.png", { frameWidth: SIZES.PLAYER.WIDTH, frameHeight: SIZES.PLAYER.HEIGHT });
@@ -21,10 +21,10 @@ export class Maze extends Phaser.Scene {
     }
 
     create() {
-        // const map = this.make.tilemap({ key: "map" });
-        // const tileset = map.addTilesetImage(mazeJSON.tilesets[0].name, TILES.MAZE, SIZES.TILE, SIZES.TILE);
-        // const groundLayer = map.createLayer(LAYERS.GROUND, tileset, 0, 0);
-        // const wallsLayer = map.createLayer(LAYERS.WALLS, tileset, 0, 0);
+        const map = this.make.tilemap({ key: "map" });
+        const tileset = map.addTilesetImage(mazeJSON.tilesets[0].name, TILES.MAZE, SIZES.TILE, SIZES.TILE);
+        const groundLayer = map.createLayer(LAYERS.GROUND, tileset, 0, 0);
+        const wallsLayer = map.createLayer(LAYERS.WALLS, tileset, 0, 0);
 
         // this.kitty0 = new Kitty(this, 400, 250); //, SPRITES.PLAYER);
         for (let i = 0; i < 10; i++) {
