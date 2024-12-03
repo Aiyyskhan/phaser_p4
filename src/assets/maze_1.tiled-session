@@ -7,6 +7,9 @@
     "expandedProjectPaths": [
     ],
     "fileStates": {
+        "": {
+            "scaleInDock": 3
+        },
         "#Tiles20241122_16_2_11": {
             "scaleInDock": 3
         },
@@ -38,11 +41,11 @@
             "scaleInDock": 1
         },
         "maze_1.json": {
-            "scale": 2,
+            "scale": 1,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 189.5,
-                "y": 551.5
+                "x": 349,
+                "y": 438
             }
         },
         "maze_1.json#maze_tiles": {
@@ -77,6 +80,9 @@
         },
         "maze_3.json#Tiles_20241130_2": {
             "scaleInDock": 4
+        },
+        "maze_4.json#Tiles20241201_1": {
+            "scaleInEditor": 1
         }
     },
     "last.imagePath": "D:/Projects/JS_projects/phaser_p4/src/assets",
@@ -95,6 +101,7 @@
         "maze_0.json"
     ],
     "tileset.embedInMap": true,
+    "tileset.lastUsedFormat": "tsx",
     "tileset.spacing": 1,
     "tileset.tileSize": {
         "height": 16,
