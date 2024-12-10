@@ -12,7 +12,7 @@ export class Maze extends Phaser.Scene {
 
     preload() {
         this.load.image(TILES.MAZE, "src/assets/durotar.png");
-        this.load.tilemapTiledJSON("map", "src/assets/maze_1.json");
+        this.load.tilemapTiledJSON("map", "src/assets/maze_6.json");
         
         this.load.spritesheet("base", "src/assets/characters/Kitty20241118_1_base.png", { frameWidth: SIZES.PLAYER.WIDTH, frameHeight: SIZES.PLAYER.HEIGHT });
         this.load.spritesheet("pattern0", "src/assets/characters/Kitty20241118_1_pattern0.png", { frameWidth: SIZES.PLAYER.WIDTH, frameHeight: SIZES.PLAYER.HEIGHT });
